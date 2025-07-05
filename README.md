@@ -5,10 +5,13 @@
 ## 🌍 Features
 
 - Translate words and phrases between English, Italian, Romanian, French, Spanish, and German
-- XML-based dictionary loaded dynamically using JAXB
+- 📘 Load dictionary data dynamically from XML using **JAXB**
+- 💻 Client-side GUI built with **Java Swing**
 - Clean separation of source and target languages
 - Client-server communication via HTTP using TomEE
 - Swing interface for a user-friendly experience
+- 🗂️ Flexible language mapping via source (`src`) and target (`tgt`) attributes in XML
+- 🛠️ Easily extendable to support more languages
 
 ## 🛠 Technologies Used
 
@@ -18,6 +21,9 @@
 - HTTP Servlets
 - XML + XSD validation
 - Swing (Java GUI)
+- XML/XSD
+- Maven
+- Apache TomEE (server-side) 
 
 ## 🧩 Architecture
 
