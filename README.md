@@ -1,8 +1,8 @@
-# TranslatorApp
 
 **TranslatorApp** is a Java-based application for translating text between multiple languages using XML, JAXB, and a Swing-based client interface.
 
-## ?? Supported Languages
+
+## 🌍 Supported Languages
 
 - English
 - Italian
@@ -11,18 +11,27 @@
 - Spanish
 - German
 
-## ?? Features
+ Features
 
 - Translate words and phrases between English, Italian, Romanian, French, Spanish, and German
-- ?? Load dictionary data dynamically from XML using **JAXB**
-- ?? Client-side GUI built with **Java Swing**
+- Load dictionary data dynamically from XML using **JAXB**
+- Client-side GUI built with **Java Swing**
 - Clean separation of source and target languages
 - Client-server communication via HTTP using TomEE
 - Swing interface for a user-friendly experience
-- ??? Flexible language mapping via source (`src`) and target (`tgt`) attributes in XML
-- ??? Easily extendable to support more languages
+- Flexible language mapping via source (`src`) and target (`tgt`) attributes in XML
+- Easily extendable to support more languages
 
-## ?? Technologies Used
+- Translate words and phrases between English, Italian, Romanian, French, Spanish, and German
+- 📘 Load dictionary data dynamically from XML using **JAXB**
+- 💻 Client-side GUI built with **Java Swing**
+- Clean separation of source and target languages
+- Client-server communication via HTTP using TomEE
+- Swing interface for a user-friendly experience
+- 🗂️ Flexible language mapping via source (`src`) and target (`tgt`) attributes in XML
+- 🛠️ Easily extendable to support more languages
+
+## 🛠 Technologies Used
 
 - Java 17
 - JAXB (Java Architecture for XML Binding)
@@ -34,14 +43,15 @@
 - Maven
 - Apache TomEE (server-side) 
 
-## ?? Architecture
+## 🧩 Architecture
 
 - **Model**: JAXB-mapped Dictionary objects
 - **View**: Swing interface for user input/output
 - **Controller**: Java Servlets deployed on TomEE
 - **Data**: XML file with multilingual word entries
 
-## ?? How to Run
+ How to Run
+
 
 1. Import the Maven project in IntelliJ IDEA
 2. Deploy the generated .war to a TomEE server.
@@ -53,23 +63,23 @@ XML Files
 dictionary.xml contains the words and their translations.
 dictionary.xsd validates the XML structure used in the application.
 
-## ?? Folder Structure
+ 📁 Folder Structure
 TranslatorApp/
-??? translator-client/ # Swing-based desktop interface
-? ??? TranslatorSwingClient.java
-??? translator-server/ # TomEE servlet backend
-? ??? RestApplication.java
-? ??? TranslationResource.java
-? ??? DictionaryLoader.java
-? ??? Dictionary.java
-? ??? ObjectFactory.java
-? ??? package-info.java
-??? xml/ # Dictionary and schema
-? ??? dictionary.xml
-? ??? dictionary.xsd
-??? index.html # (Optional) HTML start page or documentation
-??? pom.xml # Maven build file
-??? README.md # This file
+├── translator-client/ # Swing-based desktop interface
+│ └── TranslatorSwingClient.java
+├── translator-server/ # TomEE servlet backend
+│ ├── RestApplication.java
+│ ├── TranslationResource.java
+│ ├── DictionaryLoader.java
+│ ├── Dictionary.java
+│ ├── ObjectFactory.java
+│ └── package-info.java
+├── xml/ # Dictionary and schema
+│ ├── dictionary.xml
+│ └── dictionary.xsd
+├── index.html # (Optional) HTML start page or documentation
+├── pom.xml # Maven build file
+└── README.md # This file
 
 Example XML Entry:
 
@@ -85,6 +95,6 @@ Example XML Entry:
 </dictionary>
 
 
-## ?? License
+License
 
 This project is licensed under the MIT License.
